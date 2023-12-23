@@ -4,6 +4,7 @@
 		"id": "1",
 		"author": "Pi",
 		"version": "1.0.0",
+		"versionNumber": "1000",
 		"description": "Allows you to see hiding and digging animals in the game",
 		"url": "/files/xray.js"
 	}
