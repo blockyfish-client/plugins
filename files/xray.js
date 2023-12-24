@@ -1,11 +1,11 @@
 const name = "X-ray";
-const id = "1";
+const id = "plugins.pi.xray";
 const author = "Pi";
 const version = "1.0.0";
 const versionNumber = 1000;
 const description = "Allows you to see hiding and digging animals in the game";
 const script = () => {
-	window.blockyfish.addEventListener("first-game-load", () => {
+	blockyfish.addEventListener("first-game-load", () => {
 		game.currentScene.foodGlowContainer.zOrder = 996;
 		game.currentScene.foodContainer.zOrder = 997;
 		game.currentScene.namesLayer.zOrder = 998;
@@ -18,7 +18,7 @@ const script = () => {
 			} catch {}
 		}, 200);
 	});
-	window.blockyfish.addEventListener("game-load", () => {
+	blockyfish.addEventListener("game-load", () => {
 		game.currentScene.foodGlowContainer.zOrder = 996;
 		game.currentScene.foodContainer.zOrder = 997;
 		game.currentScene.namesLayer.zOrder = 998;
