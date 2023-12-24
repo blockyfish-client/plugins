@@ -1,6 +1,8 @@
 const name = "X-ray";
-const version = "1.0.0";
+const id = "1";
 const author = "Pi";
+const version = "1.0.0";
+const versionNumber = 1000;
 const description = "Allows you to see hiding and digging animals in the game";
 const script = () => {
 	window.blockyfish.addEventListener("first-game-load", () => {
