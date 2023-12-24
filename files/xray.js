@@ -28,4 +28,4 @@ const script = () => {
 	});
 };
 
-module.exports = { name, version, author, description, script };
+module.exports = { name, id, author, version, versionNumber, description, script };
