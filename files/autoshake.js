@@ -2,7 +2,7 @@ export const name = "AutoShake";
 export const id = "plugins.thej.autoshake";
 export const author = "TheJ";
 export const version = "1.0.0";
-export const versionNumber = 100;
+export const versionNumber = 1000;
 export const description = "Press V to toggle autoshake (sends packets to server to imitate mouse shaking forward backward doesnt alter rotation) (can be used to walk around invisible as GPO)";
 export const script = () => {
 	/*

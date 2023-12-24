@@ -1,10 +1,100 @@
 [
 	{
-		"name": "X-ray",
-		"id": "1",
+		"name": "Aim lock",
+		"id": "plugins.pi.aimlock",
 		"author": "Pi",
 		"version": "1.0.0",
-		"versionNumber": "1000",
+		"versionNumber": 1000,
+		"description": "Allows any animal to have mahi mahi's target locking ability. Press A to lock on to a target.",
+		"url": "/files/aimlock.js"
+	},
+	{
+		"name": "AutoShake",
+		"id": "plugins.thej.autoshake",
+		"author": "TheJ",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Press V to toggle autoshake (sends packets to server to imitate mouse shaking forward backward doesnt alter rotation) (can be used to walk around invisible as GPO)",
+		"url": "/files/autoshake.js"
+	},
+	{
+		"name": "Auto spin",
+		"id": "plugins.pi.autospin",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Spin really fast without breaking your arms. Hold Z to activate.",
+		"url": "/files/autospin.js"
+	},
+	{
+		"name": "Better vision",
+		"id": "plugins.pi.bettervision",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Removes flashbangs, ink, and darkness.",
+		"url": "/files/bettervision.js"
+	},
+	{
+		"name": "Boost hacks",
+		"id": "plugins.pi.boosthacks",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Ctrl+click to do a charged boost. Alt+click to do a weak charged boost. Ctrl+shift+click to do a special boost combo (only for some animals)",
+		"url": "/files/boosthacks.js"
+	},
+	{
+		"name": "I see dead fish",
+		"id": "plugins.pi.iseedeadfish",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Show all ghosts. This is the only way to see ghosts without becoming a ghost because saying \"I see dead fish\" no longer works.",
+		"url": "/files/iseedeadfish.js"
+	},
+	{
+		"name": "Mute slash commands",
+		"id": "plugins.pi.mutecommands",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Brings back /mute and /unmute so you can mute annoying people. Works the same way as before.",
+		"url": "/files/mutecommands.js"
+	},
+	{
+		"name": "No invisible animals",
+		"id": "plugins.pi.noinvisibleanimals",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "No more low opacity or invisible animals. These include tiger shark, barracuda, anglerfish, salamander, and many more. Also allows you to see animals that are hiding in props.",
+		"url": "/files/noinvisibleanimals.js"
+	},
+	{
+		"name": "No zoom limit",
+		"id": "plugins.pi.nozoomlimit",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Zoom clamp is removed. You can zoom in or out as far as you want.",
+		"url": "/files/nozoomlimit.js"
+	},
+	{
+		"name": "Quick disconnect",
+		"id": "plugins.pi.quickdisconnect",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Press Ctrl + Shift + Q to disconnect from any server instantly.",
+		"url": "/files/quickdisconnect.js"
+	},
+	{
+		"name": "X-ray",
+		"id": "plugins.pi.xray",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
 		"description": "Allows you to see hiding and digging animals in the game",
 		"url": "/files/xray.js"
 	}
