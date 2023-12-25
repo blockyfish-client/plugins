@@ -63,6 +63,15 @@
 		"url": "/files/mutecommands.js"
 	},
 	{
+		"name": "No camera clamp",
+		"id": "plugins.pi.nocameraclamp",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Camera position clamp is removed. Your animal will always be centered on the screen.",
+		"url": "/files/nocameraclamp.js"
+	},
+	{
 		"name": "No invisible animals",
 		"id": "plugins.pi.noinvisibleanimals",
 		"author": "Pi",
