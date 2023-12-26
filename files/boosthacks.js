@@ -1,8 +1,8 @@
 const name = "Boost hacks";
 const id = "plugins.pi.boosthacks";
 const author = "Pi";
-const version = "1.0.1";
-const versionNumber = 1010;
+const version = "1.0.2";
+const versionNumber = 1020;
 const description = "Ctrl+click to do a charged boost. Alt+click to do a weak charged boost. Ctrl+shift+click to do a special boost combo (only for some animals)";
 const script = () => {
 	function showCtrlOverlay(e) {
@@ -38,7 +38,9 @@ const script = () => {
 		} catch {}
 	}
 	function createCtrlOverlay() {
-		document.getElementById("ctrl-overlay").remove();
+		try {
+			document.getElementById("ctrl-overlay").remove();
+		} catch {}
 		var ctrl_overlay = document.createElement("div");
 		document.querySelector("div.game").insertBefore(ctrl_overlay, document.querySelector("div.game").children[0]);
 		ctrl_overlay.outerHTML = '<div id="ctrl-overlay" style="width: 100%;height: 100%;position: absolute;display: block;z-index:10000;pointer-events:none;"></div>';

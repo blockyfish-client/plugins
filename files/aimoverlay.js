@@ -1,13 +1,15 @@
 const name = "Aim overlay";
 const id = "plugins.pi.aimoverlay";
 const author = "Pi";
-const version = "1.0.0";
-const versionNumber = 1000;
+const version = "1.0.1";
+const versionNumber = 1010;
 const description = "Hold down the Ctrl key to see a red line that helps you aim";
 const script = () => {
 	const listForAnimalsWithAimOverlay = [61, 93, 94, 113];
 	function createAimOverlay() {
-		document.getElementById("aim-overlay").remove();
+		try {
+			document.getElementById("aim-overlay").remove();
+		} catch {}
 		var aim_overlay = document.createElement("hr");
 		document.querySelector("div.game").insertBefore(aim_overlay, document.querySelector("div.game").children[0]);
 		aim_overlay.outerHTML =
