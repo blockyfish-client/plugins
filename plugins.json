@@ -9,6 +9,15 @@
 		"url": "/files/aimlock.js"
 	},
 	{
+		"name": "Aim overlay",
+		"id": "plugins.pi.aimoverlay",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Hold down the Ctrl key to see a red line that helps you aim",
+		"url": "/files/aimoverlay.js"
+	},
+	{
 		"name": "AutoShake",
 		"id": "plugins.thej.autoshake",
 		"author": "TheJ",
@@ -39,8 +48,8 @@
 		"name": "Boost hacks",
 		"id": "plugins.pi.boosthacks",
 		"author": "Pi",
-		"version": "1.0.0",
-		"versionNumber": 1000,
+		"version": "1.0.1",
+		"versionNumber": 1010,
 		"description": "Ctrl+click to do a charged boost. Alt+click to do a weak charged boost. Ctrl+shift+click to do a special boost combo (only for some animals)",
 		"url": "/files/boosthacks.js"
 	},
