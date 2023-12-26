@@ -1,8 +1,8 @@
 const name = "AutoShake";
 const id = "plugins.thej.autoshake";
 const author = "TheJ";
-const version = "1.0.0";
-const versionNumber = 1000;
+const version = "1.0.1";
+const versionNumber = 1010;
 const description = "Press V to toggle autoshake (sends packets to server to imitate mouse shaking forward backward doesnt alter rotation) (can be used to walk around invisible as GPO)";
 const script = () => {
 	/*
@@ -24,7 +24,12 @@ const script = () => {
 		let FORWARD = false;
 		window.addEventListener("keydown", (e) => {
 			try {
-				if (e.code == KEYBIND) {
+				if (
+					e.code == KEYBIND &&
+					document.querySelector("#app > div.modals-container > div") == null &&
+					document.querySelector("#app > div.ui > div").style.display == "none" &&
+					document.activeElement.localName != "input"
+				) {
 					TOGGLE = !TOGGLE;
 					game.currentScene.showMessagePopup(`Autoshake has been ${TOGGLE ? "enabled" : "disabled"}`, 3000, false);
 				}
