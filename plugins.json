@@ -27,6 +27,15 @@
 		"url": "/files/autoshake.js"
 	},
 	{
+		"name": "Humpback Auto Songs",
+		"id": "plugins.hitta.autosongs",
+		"author": "Hitta",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Use set keybinds to automatically perform Humpback Whales songs.",
+		"url": "/files/autosongs.js"
+	},
+	{
 		"name": "Auto spin",
 		"id": "plugins.pi.autospin",
 		"author": "Pi",
