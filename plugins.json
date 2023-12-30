@@ -21,8 +21,8 @@
 		"name": "AutoShake",
 		"id": "plugins.thej.autoshake",
 		"author": "TheJ",
-		"version": "1.0.1",
-		"versionNumber": 1010,
+		"version": "1.0.2",
+		"versionNumber": 1020,
 		"description": "Press V to toggle autoshake (sends packets to server to imitate mouse shaking forward backward doesnt alter rotation) (can be used to walk around invisible as GPO)",
 		"url": "/files/autoshake.js"
 	},

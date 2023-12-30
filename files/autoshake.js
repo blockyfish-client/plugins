@@ -1,8 +1,8 @@
 const name = "AutoShake";
 const id = "plugins.thej.autoshake";
 const author = "TheJ";
-const version = "1.0.1";
-const versionNumber = 1010;
+const version = "1.0.2";
+const versionNumber = 1020;
 const description = "Press V to toggle autoshake (sends packets to server to imitate mouse shaking forward backward doesnt alter rotation) (can be used to walk around invisible as GPO)";
 const script = () => {
 	/*
@@ -22,7 +22,7 @@ const script = () => {
 		let KEYBIND = "KeyV";
 		let TOGGLE = false;
 		let FORWARD = false;
-		window.addEventListener("keydown", (e) => {
+		window.addEventListener("keypress", (e) => {
 			try {
 				if (
 					e.code == KEYBIND &&
@@ -48,7 +48,7 @@ const script = () => {
 				game.socketManager.sendBytePacket(blockyfish.formMovePacket(bpos[0], bpos[1], 100));
 				FORWARD = !FORWARD;
 			} catch {}
-		}, 10);
+		}, 40);
 	});
 };
 
