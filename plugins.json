@@ -63,6 +63,15 @@
 		"url": "/files/boosthacks.js"
 	},
 	{
+		"name": "Evolution tree wheel",
+		"id": "plugins.pi.evotree",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Hold down the Y key to see an evolution tree for tiers 8 - 10",
+		"url": "/files/evotree.js"
+	},
+	{
 		"name": "I see dead fish",
 		"id": "plugins.pi.iseedeadfish",
 		"author": "Pi",
