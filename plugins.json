@@ -81,6 +81,15 @@
 		"url": "/files/iseedeadfish.js"
 	},
 	{
+		"name": "Login Autofill",
+		"id": "plugins.pi.loginautofill",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Autofills your username and password in the login screen.",
+		"url": "/files/loginautofill.js"
+	},
+	{
 		"name": "Mute slash commands",
 		"id": "plugins.pi.mutecommands",
 		"author": "Pi",
