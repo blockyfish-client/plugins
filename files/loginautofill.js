@@ -1,8 +1,8 @@
 const name = "Login Autofill";
 const id = "plugins.pi.loginautofill";
 const author = "Pi";
-const version = "1.0.0";
-const versionNumber = 1000;
+const version = "1.0.1";
+const versionNumber = 1010;
 const description = "Autofills your username and password in the login screen.";
 const script = () => {
 	var loginModalOpen = false;
@@ -25,8 +25,14 @@ const script = () => {
 	});
 
 	function fillCredentials() {
-		document.querySelector(".modal-content input[type='password']").value = localStorage.getItem("autofillPassword");
-		document.querySelector(".modal-content input[type='text']").value = localStorage.getItem("autofillUsername");
+		const pw = document.querySelector(".modal-content input[type='password']");
+		const usr = document.querySelector(".modal-content input[type='text']");
+		pw.setAttribute("value", localStorage.getItem("autofillPassword")); // document.querySelector(".modal-content input[type='password']").value = localStorage.getItem("autofillPassword");
+		usr.setAttribute("value", localStorage.getItem("autofillUsername")); // document.querySelector(".modal-content input[type='text']").value = localStorage.getItem("autofillUsername");
+
+		const e = new Event("input", { bubbles: true, cancelable: true });
+		pw.dispatchEvent(e);
+		usr.dispatchEvent(e);
 	}
 
 	function startWatching() {
