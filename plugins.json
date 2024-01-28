@@ -75,8 +75,8 @@
 		"name": "Hide pets",
 		"id": "plugins.pi.hidepets",
 		"author": "Pi",
-		"version": "1.1.0",
-		"versionNumber": 1100,
+		"version": "1.1.1",
+		"versionNumber": 1110,
 		"description": "Hides all pets in the game",
 		"url": "/files/hidepets.js"
 	},
