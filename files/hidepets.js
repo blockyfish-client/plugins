@@ -1,8 +1,8 @@
 const name = "Hide pets";
 const id = "plugins.pi.hidepets";
 const author = "Pi";
-const version = "1.1.0";
-const versionNumber = 1100;
+const version = "1.1.1";
+const versionNumber = 1110;
 const description = "Hides all pets in the game";
 const script = () => {
 	blockyfish.addEventListener("first-game-load", () => {
@@ -12,7 +12,7 @@ const script = () => {
 					if (!p.foodData) p.visible = false;
 				});
 			} catch {}
-		}, 300);
+		}, 50);
 	});
 };
 
