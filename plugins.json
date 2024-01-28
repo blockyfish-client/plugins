@@ -72,6 +72,15 @@
 		"url": "/files/evotree.js"
 	},
 	{
+		"name": "Hide pets",
+		"id": "plugins.pi.hidepets",
+		"author": "Pi",
+		"version": "1.0.0",
+		"versionNumber": 1000,
+		"description": "Hides all pets in the game",
+		"url": "/files/hidepets.js"
+	},
+	{
 		"name": "I see dead fish",
 		"id": "plugins.pi.iseedeadfish",
 		"author": "Pi",
