@@ -1,8 +1,8 @@
 const name = "Humpback Auto Songs";
 const id = "plugins.hitta.autosongs";
 const author = "Hitta";
-const version = "1.0.0";
-const versionNumber = 1000;
+const version = "1.0.1";
+const versionNumber = 1010;
 const description = "Use set keybinds to automatically perform Humpback Whales songs.";
 const script = () => {
 	const songs = [
@@ -133,18 +133,15 @@ const script = () => {
 				parent.prepend(humpbackUI);
 			} catch {}
 		}, 100);
-		document.addEventListener("keyup", (e) => {
+		document.addEventListener("keydown", (e) => {
 			try {
 				if (!["1", "2", "3", "4"].includes(e.key)) return;
 				if (game.currentScene.myAnimal.fishLevelData.fishLevel != 87) return;
-				var boostSent = 0;
-				var interval = setInterval(() => {
-					boostSent += 1;
-					if (boostSent == 3) {
-						clearInterval(interval);
-					}
-					game.inputManager.handleLongPress(songs[e.key - 1][boostSent - 1]);
-				}, document.querySelector("div.top-right div.latency > span.value")?.innerText * 2.5 || 200);
+				for (let i = 0; i < 3; i++) {
+					setTimeout(() => {
+						game.inputManager.handleLongPress(songs[parseInt(e.key) - 1][i]);
+					}, Math.max(document.querySelector("div.top-right div.latency > span.value")?.innerText * 3 || 100, 100) * i);
+				}
 			} catch {}
 		});
 	});
