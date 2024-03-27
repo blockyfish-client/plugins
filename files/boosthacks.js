@@ -70,7 +70,7 @@ const script = () => {
 						}
 					}
 					if (e.altKey) {
-						game.inputManager.handleLongPress(350);
+						game.inputManager.handleLongPress(1200);
 					}
 				} catch {}
 			},
