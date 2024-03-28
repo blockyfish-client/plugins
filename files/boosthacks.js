@@ -1,8 +1,8 @@
 const name = "Boost hacks";
 const id = "plugins.pi.boosthacks";
-const author = "Pi";
-const version = "1.0.2";
-const versionNumber = 1020;
+const author = "Pi & Mahdi";
+const version = "1.0.3";
+const versionNumber = 1030;
 const description = "Ctrl+click to do a charged boost. Alt+click to do a weak charged boost. Ctrl+shift+click to do a special boost combo (only for some animals)";
 const script = () => {
 	function showCtrlOverlay(e) {
